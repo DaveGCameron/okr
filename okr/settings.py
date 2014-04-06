@@ -27,6 +27,12 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 
+TEMPLATE_LOADERS = (
+    #'django_mobile.loader.Loader',
+    #'django.template.loaders.filesystem.Loader',      # Templates in TEMPLATE_DIRS
+    'django.template.loaders.app_directories.Loader', # Templates in app_dir/templates/
+)
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -36,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'okr',
 )
 
 MIDDLEWARE_CLASSES = (

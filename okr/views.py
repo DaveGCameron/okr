@@ -4,7 +4,8 @@ from django.template import RequestContext, loader
 
 
 def root(request):
-    return HttpResponse("yuss boobs")
+    my_variable = 69
+    return render(request, 'index.html', locals())
 
 
 def kr(request, pk):
