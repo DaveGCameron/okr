@@ -11,6 +11,8 @@ admin.site.register(Company, CompanyAdmin)
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'company')
-
 admin.site.register(Employee, EmployeeAdmin)
 
+class PeriodAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Period, PeriodAdmin)
