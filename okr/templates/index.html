@@ -8,6 +8,14 @@
 
         <h1>OKRs are cool!</h1>
 
+        <ul>
+            {% for company in companies %}
+                <li>
+                    <a href="{% url 'company' pk=company.id %}">{{ company }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
         <p>test variables</p>
 
         <p>Saskia likes {{ my_variable }} animalz</p>

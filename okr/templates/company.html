@@ -6,12 +6,15 @@
 
     <body>
 
-        <h1>Happy days on Sunday!</h1>
+        <h1>Happy days on Sunday for {{ company }}!</h1>
 
-        <p>test variables</p>
+        <h2>My employees are</h2>
 
-        <p>Andrew face is {{ pk }} feet wide </p>
-        <p>Dave did a {{ pk }} meter long poo</p>
+        <ul>
+            {% for employee in my_employees %}
+                <li>{{ employee }}</li>
+            {% endfor %}
+        </ul>
 
     </body>
 
