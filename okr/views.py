@@ -14,7 +14,7 @@ def kr(request, pk):
 
 
 def company(request, pk):
-	print pk, "pooplons"
+	print pk, "pooplon"
 	response = "andrew prestons likes to %s head" % pk
-	return HttpResponse(response)
-
+	#return HttpResponse(response)
+	return render(request, 'company.html', locals())
