@@ -7,6 +7,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'okr.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^$', 'okr.views.root', name='root'),
+    url(r'^company/$', 'ork.views.company', name='company'),
     url(r'^admin/', include(admin.site.urls)),
 )
