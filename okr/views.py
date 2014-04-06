@@ -9,8 +9,8 @@ def root(request):
 
 
 def kr(request, pk):
-	print pk, "fgfgfgj"
-	return HttpResponse("ABC" + str(pk))
+	my_variable = 9
+	return render(request, 'KR', locals())
 
 
 def company(request, pk):
