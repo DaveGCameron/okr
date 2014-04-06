@@ -53,3 +53,5 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Ignore the django database
+db.sqlite3
