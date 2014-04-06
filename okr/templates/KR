@@ -8,10 +8,10 @@
 
         <h1>OKRs are cool!</h1>
 
-        <p>test variables</p>
+        <p>saki saki</p>
 
-        <p>Saskia likes {{ my_variable }} animalz</p>
-        <p>Dave likes {{ my_variable }} boys</p>
+        <p>Saskia likes {{ pk }} animalz</p>
+        <p>Dave likes {{ pk }} boys</p>
 
     </body>
 
