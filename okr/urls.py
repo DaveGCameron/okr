@@ -9,5 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', 'okr.views.root', name='root'),
     url(r'^company/$', 'ork.views.company', name='company'),
+    url(r'^kr/$', 'ork.views.kr', name='keyresult'),
     url(r'^admin/', include(admin.site.urls)),
 )
